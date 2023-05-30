@@ -52,7 +52,7 @@
 
     <script>
         function getData() {
-            fetch('get.php')
+            fetch('http://localhost/goto_api/server/api.php')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('response').innerText = data.message;

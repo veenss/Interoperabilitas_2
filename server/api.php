@@ -3,8 +3,8 @@
     switch ($method) {
         case 'GET':
             header('Content-Type: application/json');
-            $response = 'Hello, World!';
-            echo $response;
+            $response = array('message' => 'Hello, World!');
+            echo json_encode($response);
             break;
         default:
             http_response_code(405);
